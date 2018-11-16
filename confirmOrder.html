@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>The BLUE Car</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="/jadrn026/js/formvalidation.js"></script>
+        <link rel="stylesheet" type="text/css" href="/jadrn026/css/form.css">
+    </head>
+    <body> 
+       
+        <header>
+            <a href="proj2.html"><img class="Image" src="/jadrn026/image/home.png" alt="photo" height="90px" /></a>              
+        </header>
+        <div class="content">
+        <div id="AddressLabel">
+        <form  id="orderform" action="http://jadran.sdsu.edu/jadrn026/jsp/confirmation.jsp"  >
+            
+            <table>
+                <tr>
+                    <td colspan="2"><h2>Billing Address</h2></td>
+                    
+                </tr>
+                <tr>
+                    <td class="ClassTitle">First Name*</td>
+                    <td class="ClassData">
+                        <input id = "firstname" name = "firstname" type = "text" class = "formtext" required />
+                    </td>
+                
+                </tr>
+                <tr>
+                    <td>Last Name*</td>
+                    
+                    <td>
+                        <input id = "lastname" name = "lastname" type = "text" class = "formtext" required />
+                    </td>
+                
+                </tr>
+                <tr>
+                    <td>Address Line1*</td>
+                    
+                    <td>
+                        <input id = "A1" name = "A1" type = "text" class = "formtext" required />
+                    </td>
+                
+                </tr>
+                <tr>
+                    <td>Address Line2</td>
+                   
+                    <td>
+                        <input id = "A2" name = "A2" type = "text" class = "formtext" />
+                    </td>                
+                </tr>
+                <tr>
+                    <td>City*</td>
+                    <td>
+                        <input id = "city" name = "city" type = "text" class = "formtext" required />
+                    </td>                
+                </tr>
+                <tr>
+                    <td>State*</td>
+                    <td>
+                        <input id = "state" name = "state" type = "text" class = "formtext" required />
+                    </td>                
+                </tr>
+                <tr>
+                    <td>Zip Code*</td>
+                    
+                    <td>
+                        <input id = "zipcode" name = "zipcode" type = "text" class = "formtext" pattern="[0-9]{5}" title="It contains only numbers." required />
+                    </td>                
+                </tr>
+                <tr>
+                    <td>Phone Number*</td>
+                    
+                    <td>
+                        <input id = "phone" name = "phone" type = "text" class = "formtext" maxlength="10" pattern="[0-9]{10}" title="It contains numbers only." required />
+                    </td>                
+                </tr>
+                <tr>
+                    <td >Email id*</td>
+                    <td>
+                        <input id = "email" name = "email" type = "email" class ="formtext" required />
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <table>
+                <tr>
+                    <td colspan="2"><h2>Shipping Address</h2></td>
+                </tr>
+                <tr><td colspan="2"><input id="bothsameaddress" type="checkbox">
+            <label for="bothsameaddress">Same as Billing Address</label></td></tr>
+        <tr>
+            <td class="ClassTitle">First Name*</td>
+                    <td class="ClassData">
+                        <input id = "sfirsname" name = "sfirsname" type = "text" class = "formtext" required />
+                    </td>
+        </tr>
+        <tr>
+            <td>Last Name*</td>   
+                    <td>
+                        <input id = "slastname" name = "slastname" type = "text" class = "formtext" required />
+                    </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        <tr>
+            <td>Address Line1*</td>
+                    <td>
+                        <input id = "sA1" name = "sA1" type = "text" class = "formtext" required />
+                    </td>
+        </tr>
+        <tr>
+             <td>Address Line2</td>   
+                    <td>
+                        <input id = "sA2" name = "sA2" type = "text" class = "formtext" />
+                    </td>
+        </tr>
+        <tr>
+             <td>City*</td>   
+                    <td>
+                        <input id = "scity" name = "scity" type = "text" class = "formtext" required />
+                    </td>
+        </tr>
+        <tr>
+               <td>State*</td>  
+                    <td>
+                        <input id = "sstate" name = "sstate" type = "text" class = "formtext" required />
+                    </td>
+        </tr>
+        <tr>
+            <td>Zip Code*</td>    
+                    <td>
+                        <input id = "szipcode" name = "szipcode" type = "text" class = "formtext" pattern="[0-9]{5}" title="It contains only numbers." required />
+                    </td>
+        </tr>
+        <tr><td>Phone Number*</td>    
+                    <td>
+                        <input id = "sphone" name = "sphone" type = "text" class = "formtext" maxlength="10" pattern="[0-9]{10}" title="It contains only numbers." required />
+                    </td></tr>
+        <tr></tr>
+        <tr></tr>
+
+
+            </table>
+        </div>
+            
+            <div class="Carddetails">
+            <table>
+                <tr><h2>Card Details</h2></tr>
+                <tr>
+                    <td colspan="2">Card Number*</td></tr>
+                    <td colspan="2">
+                        <input name="card" type = "text" pattern="[0-9]{16}" class = "formtext" title="It contains only numbers with 16 digits." filtertype="CCNo" maxlength="16" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Name on card*</td></tr>
+                    <td colspan="2">
+                        <input name="cardholdername" type = "text" class = "formtext" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expiration Date(XX/XX)*</td>
+                    <td>CVV*</td></tr>
+                <tr>
+                    <td>
+                        <input name="expiredate" type = "text" pattern="(0?[1-9]|1[0-2])/(0?[1-9]|1[0-9]|2[0-9]|3[01])" title="Date format (MM/YY)" class = "formtext" maxlength="5" required />
+                    </td>
+                    <td>
+                        <input name="cvv" type = "text" pattern="[0-9]{3}" class = "formtext" title="It contains only numbers." maxlength="3" required/>
+                    </td>
+                </tr>
+            </table>
+            <div class="btn">
+            <a href="cart.html"><input class="button" name="clear" id="clear" type = "button" Value ="Cancle" /></a></br></br>
+            <input class="button" name="submit" id="submit" type = "submit" Value ="Place order" />
+            </div>
+        </div>
+        </form>
+        </div>
+    </div>
+    </body>
+</html>

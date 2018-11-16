@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+         Patel, Arzoo
+         Project #2
+         Spring 2018
+    -->
+    <head>
+              <title>The BLUE Car</title>
+        <link rel = "stylesheet"
+              type = "text/css"
+              href = "index.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="/jadrn026/js/index.js"></script>
+        <script src="/jadrn026/js/ShoppingCart.js"></script>       
+    </head>
+    <body>
+      <header>
+        <div id="CompanyName">The BLUE Car</div>
+        <form id="search">
+            <div id="searchtextbox">
+                    <input name = "searchtext" id="searchtext" type = "text" placeholder = "Search here" required />
+                    <input type="image" value="submit" src="/jadrn026/image/search.png"  id="searchicon" alt="Submit">
+            </div>
+        </form>
+        <div id="filters">
+                <input type="checkbox" name="Hatchback" id="Hatchback" value="Hatchback"/><label for="Hatchback" class="Menulist"> Hatchback </label><br>
+                <input type="checkbox" name="Sedan" id="Sedan" value="Sedan" /><label for="Sedan" class="Menulist"> Sedan</label><br>
+                <input type="checkbox" name="Crossover" id="Crossover" value="Crossover"/><label for="Crossover" class="Menulist"> Crossover </label><br>
+                <input type="checkbox" name="Convertible" id="Convertible" value="Convertible"/><label for="Convertible" class="Menulist"> Convertible </label><br>
+                <input type="checkbox" name="SportCar" id="SportCar" value="SportCar"/><label for="SportCar" class="Menulist"> Sport Car </label><br>
+                <input type="checkbox" name="ElectricCar" id="ElectricCar" value="ElectricCar"><label for="ElectricCar" class="Menulist"> Electric Car </label><br>
+                <input type="checkbox" name="Van" id="Van" value="Van"><label for="Van" class="Menulist"> Van </label><br>
+              
+        </div>
+      </header>
+      <div class="Content"> 
+        <div class="Box">
+          <div id="all" class="company1">All</div>
+          <div id="Volkswagen" class="company">Volkswagen</div>
+          <div id="Honda" class="company1">Honda</div>
+          <div id="Hyundai" class="company">Hyundai</div>
+          <div id="Audi" class="company1">Audi</div>
+          <div id="BMW" class="company1">BMW</div>
+          <div id="Mercedes-benz" class="company2">Mercedes-benz</div>
+          <div id="Chevrolet" class="company">Chevrolet</div>
+          <div id="Nissan" class="company1">Nissan</div>
+        </div>
+        <div class="Cart"><a href="cart.html"><img src="Cart.png" class="CartImage" alt="photo" height="58px" />
+            <div class="ItemCount" id="ItemCount">0</div></a>
+        </div>
+
+        <div id="Items">
+            <div class="Items_Display">
+              <table class="Itembox" id="Itembox" cellpadding="5%" border="1">
+                <tr><td class="Vendorid">Milk Chocolate Bar</td></tr> 
+                    <tr><td class="Tableimage"><img src="/jadrn026/image/search.png" alt="Test" width="250"/></td></tr>
+                    <tr><td id="Price">Price</td></tr>
+                    <tr><td><input type="button" value="Add to cart" id="Addtocart" /></td></tr>
+                </table >
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="Details"></p>
+  </div>
+
+</div>
+      </div>
+    </body>
+</html>
